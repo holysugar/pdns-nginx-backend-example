@@ -1,0 +1,3 @@
+#!/bin/sh
+# 自動では動かない
+echo "UPDATE records SET content = 'web1.example.com' WHERE name = 'backend.example.com' AND type = 'CNAME'" | mysql -u pdns -ppdnspass pdns
